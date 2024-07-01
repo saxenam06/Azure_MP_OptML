@@ -1,11 +1,17 @@
 ## Optimizing an ML Pipeline in Azure
+
 ## Overview
 This project is part of the Udacity Azure ML Nanodegree. In this project, we build and optimize an Azure ML pipeline using the Python SDK and a provided Scikit-learn model. This model is then compared to an Azure AutoML run.
+
 ## Useful Resources
 •	ScriptRunConfig Class
+
 •	Configure and submit training runs
+
 •	HyperDriveConfig Class
+
 •	How to tune hyperparamters
+
 ## Summary
 The dataset contains information about loan applicants, including martial status, education, loan status etc. The objective is to predict whether or not the client will subscribe a term deposit (binary, yes/no), so the target column is "y.""
 
