@@ -63,4 +63,4 @@ Possible areas for future work could be: Implement ensemble methods such as stac
 Improve Interpretability using feature importance and model explanations.
 
 ## Proof of cluster clean up
-If you did not delete your compute cluster in the code, please complete this section. Otherwise, delete this section. Image of cluster marked for deletion
+![image](https://github.com/saxenam06/Azure_MP_OptML/assets/83720464/5121defb-8c4a-4f99-b71a-a0fe00e96f81)
