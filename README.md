@@ -43,6 +43,7 @@ BanditPolicy was chosen as the early stopping policy for continously monitoring 
 AutoML generated a pipeline that used various feature engineering and scaling algorithms for e.g. StandardScalerWrapper, MaxAbsScaler, SparseNormalizer and TuncatedSVDWrapper. These feature engineering algos were combined with Various Classification algorithms by the AutoML Pipeline for e.g. XGBoostClassifier, RandomForest, SGD, LightGBM, LogisticRegression etc.
 
 ## Pipeline comparison
+
 # The AutoML model achieved an accuracy of 0.91657 using the algorithm VotingEnsemble, whereas the hyperparameter-tuned model from the HyperDrive achieved an accuracy 0.9098634294385433.
 
 The reason for better performance of AutoML is that it explores multiple machine learning models and configurations automatically, including the preprocessing steps. However, HyperDrive only optimizes the parameters of a single pre-defined classification algorithm (LOgistic regression in this case) and chooses randomnly (or only out of given explicit choices in this case) the pre-defined varying parameters (regulairsation strength and max iterations in this case ) of the classification algotihm.
