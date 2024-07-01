@@ -1,5 +1,5 @@
-%% Optimizing an ML Pipeline in Azure
-%% Overview
+## Optimizing an ML Pipeline in Azure
+## Overview
 This project is part of the Udacity Azure ML Nanodegree. In this project, we build and optimize an Azure ML pipeline using the Python SDK and a provided Scikit-learn model. This model is then compared to an Azure AutoML run.
 ## Useful Resources
 •	ScriptRunConfig Class
@@ -26,6 +26,7 @@ AutoML generated a pipeline that used various feature engineering and scaling al
 ## Pipeline comparison
 The AutoML model achieved an accuracy of 0.91657 using the algorithm VotingEnsemble, whereas the hyperparameter-tuned model from the HyperDrive achieved an accuracy 0.9098634294385433. The reason for better performance of AutoML is that it explores multiple machine learning models and configurations automatically, including the preprocessing steps. However, HyperDrive only optimizes the parameters of a single pre-defined classification algorithm (LOgistic regression in this case) and chooses randomnly (or only out of given explicit choices in this case) the pre-defined varying parameters (regulairsation strength and max iterations in this case ) of the classification algotihm.
 AutoML's exhaustive search across multiple models and hyperparameter configurationsincluding feature engineering have led to a better-tuned model compared to the limited combinations tested in the HyperDrive experiment.
+
 ## Future work
 Possible areas for future work could be: Implement ensemble methods such as stacking or blending to combine predictions from multiple models, including those from AutoML and the manually tuned model.
 Improve Interpretability using feature importance and model explanations.
