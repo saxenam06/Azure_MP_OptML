@@ -38,10 +38,19 @@ AutoML generated a pipeline that used various feature engineering and scaling al
 
 ## Pipeline comparison
 The AutoML model achieved an accuracy of 0.91657 using the algorithm VotingEnsemble, whereas the hyperparameter-tuned model from the HyperDrive achieved an accuracy 0.9098634294385433. The reason for better performance of AutoML is that it explores multiple machine learning models and configurations automatically, including the preprocessing steps. However, HyperDrive only optimizes the parameters of a single pre-defined classification algorithm (LOgistic regression in this case) and chooses randomnly (or only out of given explicit choices in this case) the pre-defined varying parameters (regulairsation strength and max iterations in this case ) of the classification algotihm.
-AutoML's exhaustive search across multiple models and hyperparameter configurationsincluding feature engineering have led to a better-tuned model compared to the limited combinations tested in the HyperDrive experiment.
+AutoML's exhaustive search across multiple models and hyperparameter configurations including feature engineering have led to a better-tuned model compared to the limited combinations tested in the HyperDrive experiment.
+
+AutoML also gives explanations of the chosen models as below: 
+
+![image](https://github.com/saxenam06/Azure_MP_OptML/assets/83720464/6f297674-af1c-4b3a-8f65-f7f9d75cdb40)
+
+![image](https://github.com/saxenam06/Azure_MP_OptML/assets/83720464/c8fa4478-3d0e-4f89-9862-20fbaf9d743e)
+
+![image](https://github.com/saxenam06/Azure_MP_OptML/assets/83720464/0544a3a2-d5f5-4f40-a0df-e710431329ab)
 
 ## Future work
 Possible areas for future work could be: Implement ensemble methods such as stacking or blending to combine predictions from multiple models, including those from AutoML and the manually tuned model.
 Improve Interpretability using feature importance and model explanations.
-Proof of cluster clean up
+
+## Proof of cluster clean up
 If you did not delete your compute cluster in the code, please complete this section. Otherwise, delete this section. Image of cluster marked for deletion
